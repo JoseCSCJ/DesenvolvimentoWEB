@@ -186,7 +186,15 @@ namespace ExplicitDependencies
     }
 }
 ``` 
+Ao comparar ambos os casos é notável a diferença no uso das **interfaces** no caso de dependências explícitas.</br> 
 
+</br>
+
+A injeção de dependências é configurada no Startup.cs através de serviços, deixando-os disponíveis para a aplicação. O *lifetime* de uma injeção de dependências especifica quando um objeto é criado ou recriado, existindo três opções:
+
+- Singleton: Uma instância será criada e compartilhada para todos
+- Scoped: Uma instância por *request* da aplicação será criada
+- Transient: Instâncias não serão compartilhadas e serão criadas cada vez que requeridas.
 
 
 
